@@ -111,7 +111,7 @@ export default function Mroll() {
         try {
           const parsed = JSON.parse(event.target?.result as string);
           setJsonTable(parsed);
-        } catch (error) {
+        } catch {
           alert("Invalid JSON file.");
         }
       };
